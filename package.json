@@ -1,0 +1,7 @@
+{
+  "name": "jinzhe-wang-academic-site",
+  "private": true,
+  "devDependencies": {
+    "wrangler": "4.131.0"
+  }
+}
