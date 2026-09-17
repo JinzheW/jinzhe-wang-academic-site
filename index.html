@@ -24,7 +24,7 @@
 
     <div class="page">
       <main id="main-content">
-        <!-- EDIT POINT 1: name, biography, email, CV, and optional portrait -->
+        <!-- EDIT POINT 1: name, biography, email, and CV -->
         <section class="masthead" id="home" aria-labelledby="page-title">
           <div class="bio">
             <h1 id="page-title">Jinzhe Wang <span lang="zh-Hans">(王今者)</span></h1>
@@ -51,114 +51,60 @@
               <div><a class="cv-link" href="https://drive.google.com/file/d/1LgaqYkBr3KsjoB-KkX48b-kwUCJduN4D/view?usp=drive_link" target="_blank" rel="noreferrer">Curriculum Vitae</a></div>
             </div>
           </div>
-
-          <!--
-            PHOTO REPLACEMENT:
-            Put an image at public/portrait.jpg, then replace div.photo-placeholder with:
-            <img class="portrait-image" src="/portrait.jpg" alt="Portrait of Jinzhe Wang" />
-          -->
-          <div class="photo">
-            <img
-              class="portrait-image"
-              src="./images/portrait.jpg"
-              width="960"
-              height="1200"
-              alt="Portrait of Jinzhe Wang"
-            />
-          </div>
         </section>
 
-        <!-- EDIT POINT 2: research sections and paper entries. -->
-        <section class="research" id="research" aria-labelledby="research-label">
-          <h2 id="research-label">Research</h2>
-
-          <!--
-            RESERVED SECTION: PUBLICATIONS
-            Remove the `hidden` attribute when this section is needed, then add entries
-            using the same article.paper structure as Working Papers. While hidden, this
-            section has no effect on layout, spacing, accessibility, or navigation.
-          -->
-          <section class="paper-group reserved-paper-group" id="publications" hidden>
-            <h3 class="paper-section-title">Publications</h3>
-            <div class="paper-list"><!-- Future publication entries go here. --></div>
-          </section>
-
+        <!-- EDIT POINT 2: Working Paper entries. -->
+        <section class="research" id="research" aria-labelledby="working-papers-label">
           <section class="paper-group" id="working-papers">
-            <h3 class="paper-section-title">Working Papers</h3>
-          <div class="paper-list">
-            <article class="paper">
-              <div class="paper-heading">
-                <span class="paper-title">Designing Expertise under Retention Constraints</span>
-              </div>
-
-              <details class="abstract">
-                <summary>Abstract</summary>
-                <div class="abstract-text">
-                      This paper studies the joint design of portable diagnostic expertise and bonus. A firm designs a worker's expertise, modeled as a reusable information structure, and performance pay. The worker decides whether to leave with acquired expertise before diagnosing and solving an unknown problem. A worker with expertise can make better diagnoses and exert higher hidden effort. Different expertise profiles can differ in internal productivity while keeping the same outside value. We show that the optimal expertise profile admits a Threshold Diagnostic Structure (TDS) that preserves diagnosis of common problems while pooling rarer ones within nested categories. To respond to a higher outside value of expertise, the firm alternates between preserving expertise with a retention premium and coarsening it to a lower bonus level, generating a non-monotone bonus response. The worker's expertise improves production even under extreme retention pressure. The model provides an informational theory of endogenous specificity.
-                </div>
-              </details>
-
-             <div class="paper-links">
-              <a
-                  href="https://drive.google.com/file/d/1ezLP1hgeT3xrzVzQo3npBqCOgXiq7uuk/view?usp=drive_link"
-                  target="_blank"
-                  rel="noreferrer"
-                >Link</a>
-
-              <a
-                  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7443698"
-                  target="_blank"
-                  rel="noreferrer"
-              >SSRN</a>
-              </div>
-            </article>
-
-            <article class="paper">
-              <div class="paper-heading">
-                <span class="paper-title">Preference Aggregation under Social Pressure</span>
-                <span class="paper-meta">with <a class="coauthor-link" href="https://weichengmin.weebly.com/" target="_blank" rel="noreferrer">Weicheng Min</a>. </span>
-              </div>
-
-              <details class="abstract">
-                <summary>Abstract</summary>
-                <div class="abstract-text">
-                  This paper studies preference aggregation in sequential majority voting with two candidates. Voters have heterogeneous preferences, are uncertain about the distribution of preferences, and incur a social-pressure cost from voting for the losing candidate. We characterize all symmetric Markov equilibria exhibiting a two-stage structure: a learning stage followed by herding once either candidate’s lead reaches a threshold. We characterize the conditions for equilibria existence and show that stronger social pressure and greater distributional uncertainty hinder preference aggregation. We also identify a class of resistant equilibria, in which voters become more willing to act sincerely as their preferred candidate falls behind, until herding begins. Finally, we study welfare across voting positions. An influence–risk trade-off implies that early voters bear more risk but exert greater influence, while later voters are more protected but less influential. Consequently, although stronger social pressure reduces welfare for all voters, it makes later voters relatively better off than early voters within an equilibrium. Moreover, when comparing coexisting equilibria under the same parameters, improvements in preference aggregation need not be Pareto improving.
-                </div>
-              </details>
-
-              <div class="paper-links">
-                <a
-                  href="https://drive.google.com/file/d/1odiXxUYos6yoOaXBhRCZTfXheFrtOP56/view"
-                  target="_blank"
-                  rel="noreferrer"
-                >Link</a>
-              </div>
-            </article>
-
-
-          </div>
-          </section>
-
-          <!--
-            RESERVED SECTION: WORK IN PROGRESS
-            Remove the `hidden` attribute when this section should appear. The title and
-            collapsed abstract are already prepared and currently have no layout impact.
-          -->
-          <section class="paper-group" id="work-in-progress" hidden>
-            <h3 class="paper-section-title">Work in Progress</h3>
+            <h2 class="paper-section-title" id="working-papers-label">Working Papers</h2>
             <div class="paper-list">
-              <article class="paper paper-minimal">
+              <article class="paper">
                 <div class="paper-heading">
-                  <span class="paper-title paper-title-static">Work in Progress Title</span>
+                  <span class="paper-title">Designing Expertise under Retention Constraints</span>
                 </div>
 
                 <details class="abstract">
                   <summary>Abstract</summary>
                   <div class="abstract-text">
-                    Replace this text when you are ready to share a short description of
-                    the project. It remains collapsed by default.
+                    This paper studies the joint design of portable diagnostic expertise and bonus. A firm designs a worker's expertise, modeled as a reusable information structure, and performance pay. The worker decides whether to leave with acquired expertise before diagnosing and solving an unknown problem. A worker with expertise can make better diagnoses and exert higher hidden effort. Different expertise profiles can differ in internal productivity while keeping the same outside value. We show that the optimal expertise profile admits a Threshold Diagnostic Structure (TDS) that preserves diagnosis of common problems while pooling rarer ones within nested categories. To respond to a higher outside value of expertise, the firm alternates between preserving expertise with a retention premium and coarsening it to a lower bonus level, generating a non-monotone bonus response. The worker's expertise improves production even under extreme retention pressure. The model provides an informational theory of endogenous specificity.
                   </div>
                 </details>
+
+                <div class="paper-links">
+                  <a
+                    href="https://drive.google.com/file/d/1ezLP1hgeT3xrzVzQo3npBqCOgXiq7uuk/view?usp=drive_link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >Link</a>
+
+                  <a
+                    href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7443698"
+                    target="_blank"
+                    rel="noreferrer"
+                  >SSRN</a>
+                </div>
+              </article>
+
+              <article class="paper">
+                <div class="paper-heading">
+                  <span class="paper-title">Preference Aggregation under Social Pressure</span>
+                  <span class="paper-meta">with <a class="coauthor-link" href="https://weichengmin.weebly.com/" target="_blank" rel="noreferrer">Weicheng Min</a>. </span>
+                </div>
+
+                <details class="abstract">
+                  <summary>Abstract</summary>
+                  <div class="abstract-text">
+                    This paper studies preference aggregation in sequential majority voting with two candidates. Voters have heterogeneous preferences, are uncertain about the distribution of preferences, and incur a social-pressure cost from voting for the losing candidate. We characterize all symmetric Markov equilibria exhibiting a two-stage structure: a learning stage followed by herding once either candidate’s lead reaches a threshold. We characterize the conditions for equilibria existence and show that stronger social pressure and greater distributional uncertainty hinder preference aggregation. We also identify a class of resistant equilibria, in which voters become more willing to act sincerely as their preferred candidate falls behind, until herding begins. Finally, we study welfare across voting positions. An influence–risk trade-off implies that early voters bear more risk but exert greater influence, while later voters are more protected but less influential. Consequently, although stronger social pressure reduces welfare for all voters, it makes later voters relatively better off than early voters within an equilibrium. Moreover, when comparing coexisting equilibria under the same parameters, improvements in preference aggregation need not be Pareto improving.
+                  </div>
+                </details>
+
+                <div class="paper-links">
+                  <a
+                    href="https://drive.google.com/file/d/1odiXxUYos6yoOaXBhRCZTfXheFrtOP56/view"
+                    target="_blank"
+                    rel="noreferrer"
+                  >Link</a>
+                </div>
               </article>
             </div>
           </section>
